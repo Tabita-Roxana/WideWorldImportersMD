@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ee2185f4-ea83-4b03-a1fc-c923c5ff357b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5cd373a3-c248-4f79-b524-0c498beba31e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Current Item</ID>
   <Name>Current Item</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,9 +8,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="31" scrolltop="-9193" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="93" x="4551" y="21749" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="31" scrolltop="-9193" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="93" x="4842" y="21749" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Item-Current" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4630" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Item-Current" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4630" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e00001612000088130000" />
             </control>
@@ -101,103 +101,103 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="09ce2a66-09b9-41d4-a5ec-ed5f0fcc46a1">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="aa1bab18-0e65-49ac-92d9-01aeb6deda33">
     <DataSourceViewID>Wide World Importers DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="aa7d0b72-2efd-444e-8e64-4449a91d5894">
+  <ErrorConfiguration dwd:design-time-name="d0d4d01f-f772-4b5d-9f76-2f122b765b51">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="8e51bf7e-6299-4aba-a740-87dee898a603">
+    <Attribute dwd:design-time-name="de098d6a-741f-4736-ba77-f4a931b8e6db">
       <ID>Stock Item</ID>
       <Name>Stock Item</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>228</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d4823175-4b1a-4a32-a92e-10b91aa6f4bd">
+        <KeyColumn dwd:design-time-name="cbd1962a-5140-4511-8508-380d5fed050c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5bc8c00-d999-4c85-a57e-96da0496f28d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d591fd7e-1cf9-441d-a583-98b3e6cb81d5">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>WWI_x0020_Stock_x0020_Item_x0020_ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="cf7e922c-7aa4-4028-b123-f1f8326206c4">
+      <NameColumn dwd:design-time-name="bef6e624-21f9-4b2f-bb05-eaf75b5bb2c6">
         <DataType>WChar</DataType>
         <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="550cc8ac-db0f-4ea6-bf3d-e52e098b14bf">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4fed76c8-5981-48e7-849c-cb465ee33478">
           <TableID>Cube_Item-Current</TableID>
           <ColumnID>Stock_x0020_Item</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="7c150f3b-d07b-4185-8d46-feedc5ae0414">
+        <AttributeRelationship dwd:design-time-name="16278f86-3e37-4df1-a895-ca273f5f6ddf">
           <AttributeID>Brand</AttributeID>
           <Name>Brand</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="29e87dbe-fe0b-454f-8e08-8ca380542fad">
+        <AttributeRelationship dwd:design-time-name="7f869e6e-79e7-4567-870a-a109c56c832c">
           <AttributeID>Color</AttributeID>
           <Name>Color</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ce799dfb-84b6-46e4-ae18-0809b536d8b4">
+        <AttributeRelationship dwd:design-time-name="9c626721-eb90-4c05-ac76-828b61eed17d">
           <AttributeID>Selling Package</AttributeID>
           <Name>Selling Package</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="db73e28a-1bc0-4194-8046-fc4ad76b8906">
+        <AttributeRelationship dwd:design-time-name="be4f0f28-6685-40e5-8651-908ddb4a5f19">
           <AttributeID>Buying Package</AttributeID>
           <Name>Buying Package</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6ea5e413-a0d0-4990-933c-e5620b3a1095">
+        <AttributeRelationship dwd:design-time-name="d4748c20-95c6-4327-a0c3-5d19f5b5631c">
           <AttributeID>Size</AttributeID>
           <Name>Size</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="65d69ae2-4ac2-4a3d-945d-e73a3068ed35">
+        <AttributeRelationship dwd:design-time-name="c20d0512-34c6-4484-bb2c-b6eba2866462">
           <AttributeID>Lead Time Days</AttributeID>
           <Name>Lead Time Days</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6d74da01-0f40-49a4-b0fc-99917752b107">
+        <AttributeRelationship dwd:design-time-name="ca223265-3626-486d-b08b-ed39397ef61b">
           <AttributeID>Quantity Per Outer</AttributeID>
           <Name>Quantity Per Outer</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9b7cebef-a461-4969-93e5-1c8f697e3665">
+        <AttributeRelationship dwd:design-time-name="33912c62-6960-4afc-af03-6dc3c881a392">
           <AttributeID>Is Chiller Stock</AttributeID>
           <Name>Is Chiller Stock</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6f485501-b20d-4155-8be8-acd8d5ae5068">
+        <AttributeRelationship dwd:design-time-name="f4cb6085-032e-4d26-8651-95388de9a17c">
           <AttributeID>Barcode</AttributeID>
           <Name>Barcode</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a5fbef0e-ade3-400d-969f-22dcc16d6ebf">
+        <AttributeRelationship dwd:design-time-name="3cd91392-d801-4417-92f9-2fd70bc9446f">
           <AttributeID>Tax Rate</AttributeID>
           <Name>Tax Rate</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="30aba486-722c-49af-8f82-2ee390542320">
+        <AttributeRelationship dwd:design-time-name="18718e6f-8911-4e29-90a7-edf1df48dcfd">
           <AttributeID>Unit Price</AttributeID>
           <Name>Unit Price</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="49a68a62-9c5c-427f-88c7-efd502f9f5f3">
+        <AttributeRelationship dwd:design-time-name="752af9c8-1067-41f8-82c7-09f00beb5d3f">
           <AttributeID>Recommended Retail Price</AttributeID>
           <Name>Recommended Retail Price</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4adf022a-08ed-454b-8709-eb9c47f0d05c">
+        <AttributeRelationship dwd:design-time-name="c5a55ce6-55e2-4e9b-a1eb-db929b16c10a">
           <AttributeID>Typical Weight Per Unit</AttributeID>
           <Name>Typical Weight Per Unit</Name>
         </AttributeRelationship>
       </AttributeRelationships>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8af2cbf5-4926-4387-b0e3-ec0539d23bcd">
+    <Attribute dwd:design-time-name="c1d0450a-67f9-4d56-9940-4d3958c778be">
       <ID>Color</ID>
       <Name>Color</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="40ef8290-270d-4153-8ba4-59c1c5f62668">
+        <KeyColumn dwd:design-time-name="4be9e96a-fd27-41d2-9cc9-56d72685db4b">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f1dfc05-7214-42e0-a22b-40f7a501c4f2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43826e88-3ed7-48c3-8e6d-ceb623138916">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Color</ColumnID>
           </Source>
@@ -207,14 +207,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="71e10470-fb23-43f7-8464-765addabaaf2">
+    <Attribute dwd:design-time-name="b3ce7890-95b5-4fbe-a2c6-55f157efe6ed">
       <ID>Selling Package</ID>
       <Name>Selling Package</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d2ea73e3-56da-4d0f-a65f-8836e99a23aa">
+        <KeyColumn dwd:design-time-name="a5a69ec2-9ad4-4972-a42c-3df7de7213b0">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="632e3d6b-92d5-4e8d-9bb8-449076a4cbac">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2c9effc-0e4e-41f5-96f4-73d67b1543c9">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Selling_x0020_Package</ColumnID>
           </Source>
@@ -224,14 +224,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ba17be9b-a636-48c4-ba4e-6c5efb54fa9f">
+    <Attribute dwd:design-time-name="a48be6d6-8a79-4505-9bcf-88395f1d4bb7">
       <ID>Buying Package</ID>
       <Name>Buying Package</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="728571e3-0d6f-49a5-87ed-241820f570c2">
+        <KeyColumn dwd:design-time-name="3e7666eb-846d-4b9f-9354-9fa45bd0c239">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed6268a7-02eb-4f15-9a23-e1cb753c5fbc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63e6768b-89a3-4ee4-a7dc-bdce165b139b">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Buying_x0020_Package</ColumnID>
           </Source>
@@ -241,14 +241,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="51fe182b-e4a9-4ff5-b81d-f17a633ceae1">
+    <Attribute dwd:design-time-name="7204f271-df3b-4d46-8427-73a10b4fe70a">
       <ID>Brand</ID>
       <Name>Brand</Name>
+      <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6851d8dc-923b-4ec3-800e-1637b5d9e992">
+        <KeyColumn dwd:design-time-name="859ee060-ae6b-4f56-b712-bbe99878e369">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="64cbc21b-9fb3-40ce-a862-7ab2619a4f1a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae9bf12e-3cdd-44a1-b135-5d948615592c">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Brand</ColumnID>
           </Source>
@@ -258,14 +259,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4c70de6c-b578-4473-bacd-10dfb0dddb53">
+    <Attribute dwd:design-time-name="4dbde958-ab50-4021-b4a5-f15964151c49">
       <ID>Size</ID>
       <Name>Size</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="96e1ca52-15a4-4850-a3a0-a1892546a0c9">
+        <KeyColumn dwd:design-time-name="cf85e452-f467-4fe5-b716-c7b200b7399b">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="83f822a4-7b10-4b23-9e0d-fa92cac6cd59">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5825b520-1cb8-4255-90b7-3073b5a128ce">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Size</ColumnID>
           </Source>
@@ -275,13 +276,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="acc75afe-80d7-4961-98ea-97ce9a30b34d">
+    <Attribute dwd:design-time-name="8d9780a4-9b3a-43d2-818e-6cc7a8ea792a">
       <ID>Lead Time Days</ID>
       <Name>Lead Time Days</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="452b517c-5dcc-474a-b83d-de721e12f54a">
+        <KeyColumn dwd:design-time-name="3fc647af-9a04-4525-a4e6-acf7e6784ef2">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa164223-b111-42a8-9582-5f1599800772">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="204b98ed-bdaa-4757-9ecd-9ff83e7cd200">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Lead_x0020_Time_x0020_Days</ColumnID>
           </Source>
@@ -291,13 +292,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="064d06a3-3171-47a6-81d4-946d356e43b8">
+    <Attribute dwd:design-time-name="9d638013-9b3f-4bba-8449-391247ffdf53">
       <ID>Quantity Per Outer</ID>
       <Name>Quantity Per Outer</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0b5c6a3f-0e95-4ad6-b54e-3e6f1c373c07">
+        <KeyColumn dwd:design-time-name="b17b2bd1-fb78-4dbc-a7d3-8fd274184cb5">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f3dbb860-eb26-4112-832d-6fa0f3899c2a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7dc8b677-0883-4fe8-b35b-80b546ff8918">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Quantity_x0020_Per_x0020_Outer</ColumnID>
           </Source>
@@ -307,13 +308,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2eaae2da-f7dd-4c69-8a23-76ddc799a51c">
+    <Attribute dwd:design-time-name="98068673-0635-4763-bca0-0552046f029f">
       <ID>Is Chiller Stock</ID>
       <Name>Is Chiller Stock</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="82e0418d-0331-452f-a20d-b30ff5de6f1e">
+        <KeyColumn dwd:design-time-name="8c4ab3c1-582a-45cc-b504-218cce4c95ba">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ad76c38-55d4-40ef-872b-3238f653a961">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f7e25ed-b688-4b6f-b4db-6fe3b2cdd079">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Is_x0020_Chiller_x0020_Stock</ColumnID>
           </Source>
@@ -323,14 +324,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="da2213fd-67f2-4c7a-8622-5021de14dff7">
+    <Attribute dwd:design-time-name="1958b660-b6ad-460b-9263-2e64a49991f5">
       <ID>Barcode</ID>
       <Name>Barcode</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a05cac0d-e902-4ed6-bd19-f7a7910c1f09">
+        <KeyColumn dwd:design-time-name="f27a1bd0-934c-455a-9e46-06bedcfc26f4">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d330c21-fc9a-4e24-bdfc-0e8a7fb79b57">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e3e7291-13f5-4d10-abc5-88ba9c1ed6ed">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Barcode</ColumnID>
           </Source>
@@ -340,13 +341,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e10f528f-ebf5-4e65-9b2d-1ad19e1595f2">
+    <Attribute dwd:design-time-name="bdac4bc7-2c58-4603-8906-6b387246a4a7">
       <ID>Tax Rate</ID>
       <Name>Tax Rate</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a9d75375-7a5b-4ed8-8572-09afe88d0099">
+        <KeyColumn dwd:design-time-name="6f616ec1-c9dc-48dc-9e10-53e11ae702d5">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="61a5dd86-3760-4f57-ade8-cde7b80ec046">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a513ab68-4706-4b7b-be0c-fa6d82866ab9">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Tax_x0020_Rate</ColumnID>
           </Source>
@@ -356,13 +357,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="19a5e4fe-f9de-4df1-84e7-6bc787b0acc2">
+    <Attribute dwd:design-time-name="bfb8f17e-6da2-46a9-98c6-3ab885fe1235">
       <ID>Unit Price</ID>
       <Name>Unit Price</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="75735fd1-bc95-4233-b342-00253ec0e062">
+        <KeyColumn dwd:design-time-name="3f2a0bbe-d482-4fb2-8966-a5bb50a9e9b9">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2e87cdf-ffd9-4c59-8c86-96f0286e6f6d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="09ebf46b-c54a-4c70-96ce-90764e8bbfb7">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Unit_x0020_Price</ColumnID>
           </Source>
@@ -372,13 +373,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4869f5a8-c135-486b-b38b-5fddd36ac390">
+    <Attribute dwd:design-time-name="3d9f9d8d-0ccd-426e-b77e-5a58297e964a">
       <ID>Recommended Retail Price</ID>
       <Name>Recommended Retail Price</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="33878c20-0c6e-4387-9bdd-80c69cfd86e5">
+        <KeyColumn dwd:design-time-name="ce4c90a5-d893-4d08-be51-d74c8545db40">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="faab813e-7a4c-4e29-990e-4babfbb39b19">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="58672966-a43f-4dc2-affd-a3898e4d7bab">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Recommended_x0020_Retail_x0020_Price</ColumnID>
           </Source>
@@ -388,13 +389,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="02025350-3fcf-4b85-a5b3-7e3cca21c6fa">
+    <Attribute dwd:design-time-name="6b975900-ee40-4b1f-bd29-2b5de404517d">
       <ID>Typical Weight Per Unit</ID>
       <Name>Typical Weight Per Unit</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="079747b3-9a3e-487f-8188-d537cd5a87d5">
+        <KeyColumn dwd:design-time-name="680d284a-6ceb-4059-a839-f686c3a4c879">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="412a0cbf-1e7a-441b-adf4-af41d6b35665">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2dfd4faf-4d34-4a10-a103-abea96e50ae3">
             <TableID>Cube_Item-Current</TableID>
             <ColumnID>Typical_x0020_Weight_x0020_Per_x0020_Unit</ColumnID>
           </Source>
@@ -406,16 +407,16 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="40682ac8-4e60-4373-a2a2-8278029febfe">
+    <Hierarchy dwd:design-time-name="3a4779ee-d79c-4c1c-ba21-4b0f5e0be527">
       <ID>Hierarchy</ID>
       <Name>Curent Item Brand</Name>
       <Levels>
-        <Level dwd:design-time-name="1e557ff1-9034-41c1-977f-8eb413c5855b">
+        <Level dwd:design-time-name="9412c562-1ced-4d43-9ebf-9563ca19378e">
           <ID>Brand</ID>
           <Name>Brand</Name>
           <SourceAttributeID>Brand</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="b4901869-7ed5-4591-8426-48a78d170637">
+        <Level dwd:design-time-name="9494bb8b-d0fc-438b-9764-dbbac7c31c17">
           <ID>Stock Item</ID>
           <Name>Stock Item</Name>
           <SourceAttributeID>Stock Item</SourceAttributeID>

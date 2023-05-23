@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="30374bdc-03b6-4839-a61e-32090b37d15f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="db25f2f8-3918-42d3-b211-8f1152415f81" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Wide World Importers</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Invoice Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="06f5b68a-ce83-43dd-a8f7-604caaf82b1d">
+        <Partition dwd:design-time-name="3fa27ac5-328a-42e0-8d79-ae59f3a78efc">
           <ID>Invoice Sales</ID>
           <Name>Invoice Sales</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3efc00b7-943a-4170-98bb-ef682e099de4">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="aec7a056-eba3-4def-8438-402cd103fc1e">
             <DataSourceViewID>Wide World Importers DW</DataSourceViewID>
             <TableID>Cube_Invoice_x0020_Sales</TableID>
           </Source>
@@ -26,8 +26,8 @@
         <AggregationDesign>
           <ID>Initial Invoice Sales Aggregation</ID>
           <Name>Initial Invoice Sales Aggregation</Name>
-          <CreatedTimestamp>2023-03-28T10:01:56.146667Z</CreatedTimestamp>
-          <LastSchemaUpdate>2023-03-28T10:01:56.146667Z</LastSchemaUpdate>
+          <CreatedTimestamp>2023-03-28T10:02:07.396667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2023-03-28T10:02:07.396667Z</LastSchemaUpdate>
           <EstimatedRows>70510</EstimatedRows>
           <Dimensions>
             <Dimension>
@@ -96,6 +96,24 @@
                 </Attribute>
                 <Attribute>
                   <AttributeID>Latest Recorded Population</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Employee</AttributeID>
+                  <EstimatedCount>10</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Preferred Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Last Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>First Name</AttributeID>
                 </Attribute>
               </Attributes>
             </Dimension>
@@ -176,24 +194,6 @@
                 </Attribute>
               </Attributes>
             </Dimension>
-            <Dimension>
-              <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Employee</AttributeID>
-                  <EstimatedCount>10</EstimatedCount>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Preferred Name</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>Last Name</AttributeID>
-                </Attribute>
-                <Attribute>
-                  <AttributeID>First Name</AttributeID>
-                </Attribute>
-              </Attributes>
-            </Dimension>
           </Dimensions>
           <Aggregations>
             <Aggregation>
@@ -220,13 +220,13 @@
                   </Attributes>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -249,21 +249,16 @@
                   </Attributes>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Employee</AttributeID>
+                      <AttributeID>Invoice Month</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -288,23 +283,18 @@
                   </Attributes>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Employee</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -327,6 +317,9 @@
                   </Attributes>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
@@ -337,48 +330,11 @@
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
                 </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
               </Dimensions>
             </Aggregation>
             <Aggregation>
               <ID>Aggregation 4</ID>
               <Name>Aggregation 4</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Country</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Invoice Month</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 5</ID>
-              <Name>Aggregation 5</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
@@ -390,6 +346,9 @@
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
@@ -410,8 +369,47 @@
                     </Attribute>
                   </Attributes>
                 </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Invoice Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -434,80 +432,7 @@
                   </Attributes>
                 </Dimension>
                 <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice</CubeDimensionID>
-                </Dimension>
-                <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 7</ID>
-              <Name>Aggregation 7</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Country</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Invoice Year</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 8</ID>
-              <Name>Aggregation 8</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Country</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
@@ -520,8 +445,77 @@
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
                 </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Bill To Customer</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ISO Week Number</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Bill To Customer</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Invoice Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -541,18 +535,23 @@
                   <CubeDimensionID>City</CubeDimensionID>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>ISO Week Number</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Invoice Month</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -575,21 +574,21 @@
                   </Attributes>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Invoice Year</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Employee</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -601,14 +600,20 @@
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Bill To Customer</AttributeID>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Sales Territory</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
@@ -616,23 +621,13 @@
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Invoice Year</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Employee</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -655,10 +650,13 @@
                   </Attributes>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -670,9 +668,6 @@
                     </Attribute>
                   </Attributes>
                 </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
               </Dimensions>
             </Aggregation>
             <Aggregation>
@@ -681,34 +676,33 @@
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Bill To Customer</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Country</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Sales Territory</AttributeID>
-                    </Attribute>
-                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Invoice Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -728,10 +722,13 @@
                   <CubeDimensionID>City</CubeDimensionID>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Fiscal Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -740,14 +737,6 @@
                   <Attributes>
                     <Attribute>
                       <AttributeID>Invoice Year</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Employee</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -769,6 +758,48 @@
                   <CubeDimensionID>City</CubeDimensionID>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Bill To Customer</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
@@ -781,53 +812,6 @@
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Employee</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 10</ID>
-              <Name>Aggregation 10</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Country</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Sales Territory</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Invoice Year</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -847,10 +831,18 @@
                   <CubeDimensionID>City</CubeDimensionID>
                 </Dimension>
                 <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
+                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -861,9 +853,6 @@
                       <AttributeID>Invoice Year</AttributeID>
                     </Attribute>
                   </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -883,74 +872,7 @@
                   <CubeDimensionID>City</CubeDimensionID>
                 </Dimension>
                 <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice</CubeDimensionID>
-                </Dimension>
-                <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 13</ID>
-              <Name>Aggregation 13</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Bill To Customer</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Invoice Month</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 14</ID>
-              <Name>Aggregation 14</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Bill To Customer</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
@@ -968,8 +890,91 @@
                     </Attribute>
                   </Attributes>
                 </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 13</ID>
+              <Name>Aggregation 13</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Invoice Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 14</ID>
+              <Name>Aggregation 14</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -989,40 +994,7 @@
                   <CubeDimensionID>City</CubeDimensionID>
                 </Dimension>
                 <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Invoice Year</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 16</ID>
-              <Name>Aggregation 16</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Bill To Customer</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
@@ -1038,8 +1010,44 @@
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
                 </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 16</ID>
+              <Name>Aggregation 16</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Sales Territory</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Invoice Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -1054,23 +1062,10 @@
                   <CubeDimensionID>City</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Subregion</AttributeID>
+                      <AttributeID>Country</AttributeID>
                     </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Invoice Year</AttributeID>
+                      <AttributeID>Sales Territory</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -1082,23 +1077,6 @@
                     </Attribute>
                   </Attributes>
                 </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 18</ID>
-              <Name>Aggregation 18</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
@@ -1109,50 +1087,6 @@
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Invoice Month</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 19</ID>
-              <Name>Aggregation 19</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Invoice Year</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -1163,18 +1097,18 @@
     <MeasureGroup>
       <ID>Sales</ID>
       <Partitions>
-        <Partition dwd:design-time-name="b8308e0e-2db2-4d2b-b85b-de93910d9cb1">
+        <Partition dwd:design-time-name="6e1f5ff7-c96b-4df8-b5ea-94b3a257a2c1">
           <ID>Sales</ID>
           <Name>Sales 2013</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="0dc200a1-788a-4173-aff7-174cdf601be9">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="5f2294ef-bfc1-4f87-98df-b5d176eaf838">
             <DataSourceID>Wide World Importers DW</DataSourceID>
             <QueryDefinition>SELECT [Cube].[Sales].[Sale Key],[Cube].[Sales].[City Key],[Cube].[Sales].[WWI City ID],[Cube].[Sales].[Customer Key],[Cube].[Sales].[WWI Customer ID],[Cube].[Sales].[Bill To Customer Key],[Cube].[Sales].[WWI Bill To Customer ID],[Cube].[Sales].[Stock Item Key],[Cube].[Sales].[WWI Stock Item ID],[Cube].[Sales].[Invoice Date Key],[Cube].[Sales].[Delivery Date Key],[Cube].[Sales].[Salesperson Key],[Cube].[Sales].[WWI Employee ID],[Cube].[Sales].[WWI Invoice ID],[Cube].[Sales].[Description],[Cube].[Sales].[Package],[Cube].[Sales].[Quantity],[Cube].[Sales].[Unit Price],[Cube].[Sales].[Tax Rate],[Cube].[Sales].[Total Excluding Tax],[Cube].[Sales].[Tax Amount],[Cube].[Sales].[Profit],[Cube].[Sales].[Total Including Tax],[Cube].[Sales].[Total Dry Items],[Cube].[Sales].[Total Chiller Items],[Cube].[Sales].[Sales Count],[Cube].[Sales].[Lineage Key]
-FROM [Cube].[Sales]
-WHERE [Sales].[Invoice Date Key] &lt;= '12/31/2013'</QueryDefinition>
+  FROM [Cube].[Sales]
+		WHERE[Sales].[Invoice Date Key] &lt;= '12/31/2013'</QueryDefinition>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -1182,18 +1116,18 @@ WHERE [Sales].[Invoice Date Key] &lt;= '12/31/2013'</QueryDefinition>
           <EstimatedRows>61000</EstimatedRows>
           <AggregationDesignID>Initial Sales Aggregation</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="9af98169-6923-46bc-9a80-ef17d3c418d5">
+        <Partition dwd:design-time-name="ab955b8d-0ab7-42f7-b047-f9b2efdb4237">
           <ID>Sales 2014</ID>
           <Name>Sales 2014</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="8477b8d2-2622-4b0d-a02f-3987804566ad">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="0a81fe76-6a55-4d40-bc12-ce4b8a0821e8">
             <DataSourceID>Wide World Importers DW</DataSourceID>
             <QueryDefinition>SELECT [Cube].[Sales].[Sale Key],[Cube].[Sales].[City Key],[Cube].[Sales].[WWI City ID],[Cube].[Sales].[Customer Key],[Cube].[Sales].[WWI Customer ID],[Cube].[Sales].[Bill To Customer Key],[Cube].[Sales].[WWI Bill To Customer ID],[Cube].[Sales].[Stock Item Key],[Cube].[Sales].[WWI Stock Item ID],[Cube].[Sales].[Invoice Date Key],[Cube].[Sales].[Delivery Date Key],[Cube].[Sales].[Salesperson Key],[Cube].[Sales].[WWI Employee ID],[Cube].[Sales].[WWI Invoice ID],[Cube].[Sales].[Description],[Cube].[Sales].[Package],[Cube].[Sales].[Quantity],[Cube].[Sales].[Unit Price],[Cube].[Sales].[Tax Rate],[Cube].[Sales].[Total Excluding Tax],[Cube].[Sales].[Tax Amount],[Cube].[Sales].[Profit],[Cube].[Sales].[Total Including Tax],[Cube].[Sales].[Total Dry Items],[Cube].[Sales].[Total Chiller Items],[Cube].[Sales].[Sales Count],[Cube].[Sales].[Lineage Key]
-FROM [Cube].[Sales]
-WHERE [Sales].[Invoice Date Key] BETWEEN '1/1/2014' and '12/31/2014'</QueryDefinition>
+  FROM [Cube].[Sales]
+		WHERE [Sales].[Invoice Date Key] BETWEEN '1/1/2014' and '12/31/2014'</QueryDefinition>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -1201,18 +1135,18 @@ WHERE [Sales].[Invoice Date Key] BETWEEN '1/1/2014' and '12/31/2014'</QueryDefin
           <EstimatedRows>70000</EstimatedRows>
           <AggregationDesignID>Initial Sales Aggregation</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="193c50d4-55f7-45f3-853b-7e9bfc5e330a">
+        <Partition dwd:design-time-name="f5aef651-1d18-4a00-b17f-e38faaab224f">
           <ID>Sales 2015</ID>
           <Name>Sales 2015</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="08f987c8-2fe1-450c-9c64-f608c06f7fa3">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="505513ea-b12e-47d0-a9a8-5bfdad109318">
             <DataSourceID>Wide World Importers DW</DataSourceID>
             <QueryDefinition>SELECT [Cube].[Sales].[Sale Key],[Cube].[Sales].[City Key],[Cube].[Sales].[WWI City ID],[Cube].[Sales].[Customer Key],[Cube].[Sales].[WWI Customer ID],[Cube].[Sales].[Bill To Customer Key],[Cube].[Sales].[WWI Bill To Customer ID],[Cube].[Sales].[Stock Item Key],[Cube].[Sales].[WWI Stock Item ID],[Cube].[Sales].[Invoice Date Key],[Cube].[Sales].[Delivery Date Key],[Cube].[Sales].[Salesperson Key],[Cube].[Sales].[WWI Employee ID],[Cube].[Sales].[WWI Invoice ID],[Cube].[Sales].[Description],[Cube].[Sales].[Package],[Cube].[Sales].[Quantity],[Cube].[Sales].[Unit Price],[Cube].[Sales].[Tax Rate],[Cube].[Sales].[Total Excluding Tax],[Cube].[Sales].[Tax Amount],[Cube].[Sales].[Profit],[Cube].[Sales].[Total Including Tax],[Cube].[Sales].[Total Dry Items],[Cube].[Sales].[Total Chiller Items],[Cube].[Sales].[Sales Count],[Cube].[Sales].[Lineage Key]
-FROM [Cube].[Sales]
-WHERE [Sales].[Invoice Date Key] BETWEEN '1/1/2015' and '12/31/2015'</QueryDefinition>
+  FROM [Cube].[Sales]
+		WHERE [Sales].[Invoice Date Key] BETWEEN '1/1/2015' and '12/31/2015'</QueryDefinition>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -1220,18 +1154,18 @@ WHERE [Sales].[Invoice Date Key] BETWEEN '1/1/2015' and '12/31/2015'</QueryDefin
           <EstimatedRows>75000</EstimatedRows>
           <AggregationDesignID>Initial Sales Aggregation</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="70204f9c-50cf-4d6a-87ac-adbf95b5d0b2">
+        <Partition dwd:design-time-name="5ade6613-abbe-476e-9535-99f74dd51390">
           <ID>Sales 2016 to Current</ID>
           <Name>Sales 2016 to Current</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="b747fda9-a572-4331-8743-568429ff0f92">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="e791d924-3c4e-4480-8bb4-9ba47c06d155">
             <DataSourceID>Wide World Importers DW</DataSourceID>
             <QueryDefinition>SELECT [Cube].[Sales].[Sale Key],[Cube].[Sales].[City Key],[Cube].[Sales].[WWI City ID],[Cube].[Sales].[Customer Key],[Cube].[Sales].[WWI Customer ID],[Cube].[Sales].[Bill To Customer Key],[Cube].[Sales].[WWI Bill To Customer ID],[Cube].[Sales].[Stock Item Key],[Cube].[Sales].[WWI Stock Item ID],[Cube].[Sales].[Invoice Date Key],[Cube].[Sales].[Delivery Date Key],[Cube].[Sales].[Salesperson Key],[Cube].[Sales].[WWI Employee ID],[Cube].[Sales].[WWI Invoice ID],[Cube].[Sales].[Description],[Cube].[Sales].[Package],[Cube].[Sales].[Quantity],[Cube].[Sales].[Unit Price],[Cube].[Sales].[Tax Rate],[Cube].[Sales].[Total Excluding Tax],[Cube].[Sales].[Tax Amount],[Cube].[Sales].[Profit],[Cube].[Sales].[Total Including Tax],[Cube].[Sales].[Total Dry Items],[Cube].[Sales].[Total Chiller Items],[Cube].[Sales].[Sales Count],[Cube].[Sales].[Lineage Key]
-FROM [Cube].[Sales]
-WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
+  FROM [Cube].[Sales]
+		WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -1244,8 +1178,8 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
         <AggregationDesign>
           <ID>Initial Sales Aggregation</ID>
           <Name>Initial Sales Aggregation</Name>
-          <CreatedTimestamp>2023-03-28T09:59:35.15Z</CreatedTimestamp>
-          <LastSchemaUpdate>2023-03-28T09:59:35.15Z</LastSchemaUpdate>
+          <CreatedTimestamp>2023-03-28T09:59:37.706667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2023-03-28T09:59:37.706667Z</LastSchemaUpdate>
           <EstimatedRows>75000</EstimatedRows>
           <Dimensions>
             <Dimension>
@@ -1615,7 +1549,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                       <AttributeID>Country</AttributeID>
                     </Attribute>
                     <Attribute>
-                      <AttributeID>Sales Territory</AttributeID>
+                      <AttributeID>Subregion</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -1695,6 +1629,11 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sales Territory</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
@@ -1720,19 +1659,9 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -1769,7 +1698,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -1789,17 +1718,20 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Sales Territory</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Brand</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Current Item</CubeDimensionID>
@@ -1814,14 +1746,6 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
@@ -1859,15 +1783,13 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
                     <Attribute>
                       <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
@@ -1906,13 +1828,15 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
                     <Attribute>
                       <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
@@ -1961,7 +1885,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -1973,42 +1897,42 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Country</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Employee</AttributeID>
+                      <AttributeID>Brand</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
                   </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -2040,75 +1964,28 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Employee</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
+                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
             <Aggregation>
               <ID>Aggregation b</ID>
               <Name>Aggregation b</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Brand</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Brand</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Employee</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation c</ID>
-              <Name>Aggregation c</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
@@ -2140,9 +2017,56 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -2187,6 +2111,51 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Fiscal Year Label</AttributeID>
@@ -2199,8 +2168,55 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation e</ID>
-              <Name>Aggregation e</Name>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
@@ -2246,8 +2262,8 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation f</ID>
-              <Name>Aggregation f</Name>
+              <ID>Aggregation 11</ID>
+              <Name>Aggregation 11</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
@@ -2291,8 +2307,8 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation 10</ID>
-              <Name>Aggregation 10</Name>
+              <ID>Aggregation 12</ID>
+              <Name>Aggregation 12</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
@@ -2336,88 +2352,6 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation 11</ID>
-              <Name>Aggregation 11</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Country</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 12</ID>
-              <Name>Aggregation 12</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Brand</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Brand</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
               <ID>Aggregation 13</ID>
               <Name>Aggregation 13</Name>
               <Dimensions>
@@ -2448,14 +2382,14 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Fiscal Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -2465,25 +2399,23 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Brand</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Current Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Brand</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
@@ -2532,14 +2464,14 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -2617,7 +2549,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
+                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -2625,7 +2557,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -2662,7 +2594,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -2670,7 +2602,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
+                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -2749,9 +2681,6 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -2759,6 +2688,9 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -2794,6 +2726,9 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
@@ -2801,9 +2736,6 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -2975,7 +2907,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
+                      <AttributeID>Calendar Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3013,14 +2945,14 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Fiscal Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -3058,7 +2990,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
+                      <AttributeID>Fiscal Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3070,23 +3002,25 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Country</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Current Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
@@ -3095,7 +3029,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>ISO Week Number</AttributeID>
+                      <AttributeID>Calendar Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3140,7 +3074,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>ISO Week Number</AttributeID>
+                      <AttributeID>Calendar Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3234,6 +3168,88 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Country</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ISO Week Number</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 27</ID>
+              <Name>Aggregation 27</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ISO Week Number</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 28</ID>
+              <Name>Aggregation 28</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
@@ -3266,8 +3282,8 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation 27</ID>
-              <Name>Aggregation 27</Name>
+              <ID>Aggregation 29</ID>
+              <Name>Aggregation 29</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
@@ -3303,8 +3319,8 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation 28</ID>
-              <Name>Aggregation 28</Name>
+              <ID>Aggregation 2a</ID>
+              <Name>Aggregation 2a</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
@@ -3348,98 +3364,6 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation 29</ID>
-              <Name>Aggregation 29</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Bill To Customer</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Employee</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 2a</ID>
-              <Name>Aggregation 2a</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Bill To Customer</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Employee</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
               <ID>Aggregation 2b</ID>
               <Name>Aggregation 2b</Name>
               <Dimensions>
@@ -3470,15 +3394,17 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3519,15 +3445,13 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
                     <Attribute>
                       <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -3554,20 +3478,23 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3614,7 +3541,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
+                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3623,6 +3550,53 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
             <Aggregation>
               <ID>Aggregation 2f</ID>
               <Name>Aggregation 2f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Bill To Customer</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Employee</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 30</ID>
+              <Name>Aggregation 30</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
@@ -3668,48 +3642,6 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation 30</ID>
-              <Name>Aggregation 30</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Bill To Customer</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
               <ID>Aggregation 31</ID>
               <Name>Aggregation 31</Name>
               <Dimensions>
@@ -3737,7 +3669,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
+                      <AttributeID>Calendar Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3781,13 +3713,15 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
-                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -3817,15 +3751,17 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3861,15 +3797,13 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
                     <Attribute>
                       <AttributeID>Fiscal Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -3899,17 +3833,15 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -3943,15 +3875,17 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Month Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -3981,13 +3915,15 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Calendar Month Label</AttributeID>
                     </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
                     <Attribute>
                       <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
@@ -4023,6 +3959,86 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
+                      <AttributeID>Calendar Month Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 39</ID>
+              <Name>Aggregation 39</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Bill To Customer</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Month Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3a</ID>
+              <Name>Aggregation 3a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Bill To Customer</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
                       <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
@@ -4038,98 +4054,98 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation 39</ID>
-              <Name>Aggregation 39</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 3a</ID>
-              <Name>Aggregation 3a</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
               <ID>Aggregation 3b</ID>
               <Name>Aggregation 3b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3c</ID>
+              <Name>Aggregation 3c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3d</ID>
+              <Name>Aggregation 3d</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
@@ -4161,96 +4177,6 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 3c</ID>
-              <Name>Aggregation 3c</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Brand</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 3d</ID>
-              <Name>Aggregation 3d</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Brand</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -4287,6 +4213,96 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3f</ID>
+              <Name>Aggregation 3f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 40</ID>
+              <Name>Aggregation 40</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                   <Attributes>
                     <Attribute>
                       <AttributeID>Employee</AttributeID>
@@ -4312,103 +4328,19 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               </Dimensions>
             </Aggregation>
             <Aggregation>
-              <ID>Aggregation 3f</ID>
-              <Name>Aggregation 3f</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Bill To Customer</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
-              <ID>Aggregation 40</ID>
-              <Name>Aggregation 40</Name>
-              <Dimensions>
-                <Dimension>
-                  <CubeDimensionID>City</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Customer</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Bill To Customer</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Current Item</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Invoice Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Fiscal Year Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-                <Dimension>
-                  <CubeDimensionID>Delivery Date</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
-                    </Attribute>
-                  </Attributes>
-                </Dimension>
-              </Dimensions>
-            </Aggregation>
-            <Aggregation>
               <ID>Aggregation 41</ID>
               <Name>Aggregation 41</Name>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Bill To Customer</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Item</CubeDimensionID>
@@ -4431,7 +4363,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
+                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -4443,14 +4375,14 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Bill To Customer</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Item</CubeDimensionID>
@@ -4465,15 +4397,17 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
+                      <AttributeID>Fiscal Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Fiscal Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
               </Dimensions>
             </Aggregation>
@@ -4483,11 +4417,6 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
               <Dimensions>
                 <Dimension>
                   <CubeDimensionID>City</CubeDimensionID>
-                  <Attributes>
-                    <Attribute>
-                      <AttributeID>Subregion</AttributeID>
-                    </Attribute>
-                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Customer</CubeDimensionID>
@@ -4497,21 +4426,28 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Current Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Salesperson- Current</CubeDimensionID>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
-                    </Attribute>
-                    <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
+                      <AttributeID>Calendar Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -4545,7 +4481,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Invoice Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Calendar Year Label</AttributeID>
+                      <AttributeID>Fiscal Month Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -4553,7 +4489,7 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
-                      <AttributeID>Fiscal Month Label</AttributeID>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
@@ -4589,13 +4525,177 @@ WHERE [Sales].[Invoice Date Key] &gt;= '1/1/2016'</QueryDefinition>
                     <Attribute>
                       <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 46</ID>
+              <Name>Aggregation 46</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                    <Attribute>
+                      <AttributeID>Fiscal Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 47</ID>
+              <Name>Aggregation 47</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
                   </Attributes>
                 </Dimension>
                 <Dimension>
                   <CubeDimensionID>Delivery Date</CubeDimensionID>
                   <Attributes>
                     <Attribute>
+                      <AttributeID>Fiscal Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 48</ID>
+              <Name>Aggregation 48</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Subregion</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
                       <AttributeID>Calendar Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 49</ID>
+              <Name>Aggregation 49</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>City</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Customer</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Item</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Current Item</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Brand</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Salesperson- Current</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Invoice Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Month Label</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Delivery Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year Label</AttributeID>
                     </Attribute>
                   </Attributes>
                 </Dimension>
